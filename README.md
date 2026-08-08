@@ -44,6 +44,3 @@ cd win1m-button
 npx serve .
 ```
 
-## 📄 Licență
-
-Distribuit sub licența MIT. Vezi fișierul `LICENSE` pentru detalii.
