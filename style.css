@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #2e0854);
+    background-size: 400% 400%;
+    animation: gradientBg 12s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+@keyframes gradientBg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Efecte de text iluminate pe centru */
+.custom-title {
+    font-weight: 900 !important;
+    color: #00f2fe;
+    text-shadow: 0px 4px 20px rgba(0, 242, 254, 0.5), 0px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+/* Forțăm butonul să stea inițial perfect în centrul zonei de jos */
+#crazy-btn {
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    z-index: 5;
+    transition: left 0.12s ease-out, top 0.12s ease-out; /* Tranziție fluidă când fuge */
+}
+
+/* Clase pentru efectele speciale declanșate din JS */
+.flash-white {
+    animation: flashBg 0.2s ease-out;
+}
+
+@keyframes flashBg {
+    0% { filter: brightness(2); }
+    100% { filter: brightness(1); }
+}
+
+.quake-effect {
+    animation: screenShake 0.4s ease-in-out;
+}
+
+@keyframes screenShake {
+    0%, 100% { transform: translate(0, 0); }
+    20%, 60% { transform: translate(-8px, 8px); }
+    40%, 80% { transform: translate(8px, -8px); }
+}

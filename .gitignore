@@ -1,0 +1,20 @@
+# Sistem de operare
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swp~
+
+# Dependențe (dacă adaugi ulterior npm/live-server etc.)
+node_modules/
+
+# Fișiere de build/output
+dist/
+build/
+
+# Loguri
+*.log
